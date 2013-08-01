@@ -17,11 +17,8 @@ class BowlingGame
       @next_roll = @rolls[@current_roll +1]
       
 
-      if @rolls[@current_roll +2]
-        @first_roll_next_frame = @rolls[@current_roll +2] 
-      else
-        @first_roll_next_frame = 0
-      end
+      @rolls[@current_roll +2] ? @first_roll_next_frame = @rolls[@current_roll +2] : @first_roll_next_frame = 0
+      
 
       if @roll == 10
         if frame > 10
@@ -44,13 +41,11 @@ class BowlingGame
   def strike_frame
     @total_score += 10 + @next_roll + @first_roll_next_frame
     @current_roll +=1
-    return @total_score
   end
 
   def spare_frame
     @total_score += 10 + @first_roll_next_frame
     @current_roll += 2
-    return @total_score
   end
 
   def regular_frame
