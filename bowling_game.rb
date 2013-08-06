@@ -14,22 +14,15 @@ class BowlingGame
 
     while rolls?
       set_roll_logic
-      if strike?
-        if @frame > 10
-          return @total_score
-        else
-          strike_frame
-      end
-      elsif spare?
-        spare_frame
+      if @frame > 10
+        return @total_score
       else
-        regular_frame
+        score_frame
       end
-      @frame += 1
     end
     return @total_score
   end
-
+   
   private
 
   def set_roll_logic
@@ -66,7 +59,14 @@ class BowlingGame
   end
 
   def score_frame
-    
-  end
+    if strike?
+      strike_frame
+    elsif spare?
+      spare_frame
+    else
+      regular_frame
+    end
 
+    @frame += 1
+  end
 end

@@ -1,0 +1,61 @@
+
+BowlingGame
+  when a perfect game is bowled
+current_roll0
+current_roll0
+rolls?true
+strike: true
+frame: 1
+current_roll1
+current_roll1
+rolls?true
+strike: true
+frame: 2
+current_roll2
+current_roll2
+rolls?true
+strike: true
+frame: 3
+current_roll3
+current_roll3
+rolls?true
+strike: true
+frame: 4
+current_roll4
+current_roll4
+rolls?true
+strike: true
+frame: 5
+current_roll5
+current_roll5
+rolls?true
+strike: true
+frame: 6
+current_roll6
+current_roll6
+rolls?true
+strike: true
+frame: 7
+current_roll7
+current_roll7
+rolls?true
+strike: true
+frame: 8
+current_roll8
+current_roll8
+rolls?true
+strike: true
+frame: 9
+current_roll9
+current_roll9
+rolls?true
+strike: true
+frame: 10
+current_roll10
+current_roll10
+rolls?true
+strike: true
+    pins always == 10 and the game score will be 300
+
+Finished in 0.00106 seconds
+1 example, 0 failures
